@@ -11942,7 +11942,7 @@ class ThemeDecoder {
         ),
         canvasColor: decodeColor(value['canvasColor'], validate: false),
         cardColor: decodeColor(value['cardColor'], validate: false),
-        cardTheme: decodeCardTheme(value['cardTheme'], validate: false).data,
+        cardTheme: decodeCardTheme(value['cardTheme'], validate: false)?.data,
         checkboxTheme: decodeCheckboxThemeData(
           value['checkboxTheme'],
           validate: false,
