@@ -12124,7 +12124,7 @@ class ThemeDecoder {
           value['switchTheme'],
           validate: false,
         ),
-        tabBarTheme: decodeTabBarTheme(value['tabBarTheme'], validate: false),
+        tabBarTheme: decodeTabBarTheme(value['tabBarTheme'], validate: false)?.data,
         textButtonTheme: decodeTextButtonThemeData(
           value['textButtonTheme'],
           validate: false,
