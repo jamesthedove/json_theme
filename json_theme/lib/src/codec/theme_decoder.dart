@@ -11962,7 +11962,7 @@ class ThemeDecoder {
           value['dataTableTheme'],
           validate: false,
         ),
-        dialogTheme: decodeDialogTheme(value['dialogTheme'], validate: false),
+        dialogTheme: decodeDialogTheme(value['dialogTheme'], validate: false)?.data,
         disabledColor: decodeColor(value['disabledColor'], validate: false),
         dividerColor: decodeColor(value['dividerColor'], validate: false),
         dividerTheme: decodeDividerThemeData(
